@@ -6,3 +6,4 @@ matplotlib
 ucimlrepo
 fastai
 flask
+fastbook
