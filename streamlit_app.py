@@ -5,7 +5,10 @@ from PIL import Image
 import torch
 from torchvision import models, transforms
 from fastbook import resnet50, load_learner
-
+import pathlib
+plt = platform.system()
+if plt == 'Linux': pathlib.WindowsPath = pathlib.PosixPath
+    
 # Function to load a limited number of images from a given folder
 def load_images(folder, start_idx, end_idx):
     images = []
