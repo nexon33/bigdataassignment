@@ -6,6 +6,7 @@ import torch
 from torchvision import models, transforms
 from fastbook import resnet50, load_learner
 import pathlib
+import platform
 plt = platform.system()
 if plt == 'Linux': pathlib.WindowsPath = pathlib.PosixPath
     
