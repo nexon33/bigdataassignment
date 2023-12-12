@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>API Image Upload</title>
+</head>
+<body>
+    <h1>Upload Image for Prediction</h1>
+    <form action="/" method="post" enctype="multipart/form-data">
+        <input type="file" name="file">
+        <input type="submit" value="Upload">
+    </form>
+
+    <h2>Example Python Code to Upload File Programmatically</h2>
+    <pre>
+        <code>
+import requests
+
+url = "http://localhost:5000/"  # replace with your URL
+filepath = "/path/to/your/file"  # replace with your file path
+
+with open(filepath, 'rb') as file:
+    files = {'file': file}
+    response = requests.post(url, files=files)
+
+print(response.status_code)
+        </code>
+    </pre>
+</body>
+</html>
